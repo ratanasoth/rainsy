@@ -49,9 +49,10 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-home"></i> Home<span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="<?php echo base_url("slideshow");?>">&raquo; Slideshow</a></li>
-                            <li><a href="<?php echo base_url("service");?>">&raquo; Services</a></li>
+                            <li><a href="<?php echo base_url("service");?>">&raquo; Page Thumbnail</a></li>
                             <li><a href="<?php echo base_url("welcome");?>">&raquo; Welcome</a></li>
                             <li><a href="<?php echo base_url("news");?>">&raquo; News</a></li>
+                            <li><a href="#">&raquo; Socials</a></li>
                         </ul>
                     </li>
                     <li><a href="<?php echo base_url('menu'); ?>"><i class="glyphicon glyphicon-list"></i> Menu</a></li>
@@ -67,21 +68,21 @@
                           <li><a href="<?php echo base_url("footer");?>">&raquo; Footer</a></li>
                         </ul>
                   </li>
-                  <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-th"></i> Services <span class="caret"></span></a>
-                      <ul class="dropdown-menu">
-                          <li><a href="<?php echo base_url('ItSolution/getsolution'); ?>">&raquo; IT Solutions</a></li>
-                          <li><a href="<?php echo base_url('ItSolution/getlicense'); ?>">&raquo; License</a></li>
-                          <li><a href="<?php echo base_url('license'); ?>">&raquo; License Logo</a></li>
-                          <li><a href="<?php echo base_url('software/listsoftware'); ?>">&raquo; Software Dev</a></li>
-                          <li><a href="<?php echo base_url('training/trainingList'); ?>">&raquo; IT Training</a></li>
-                          <li><a href="<?php echo base_url('training/centerlist'); ?>">&raquo; Test Center</a></li>
-                          <li><a href="<?php echo base_url('training/slidelist'); ?>">&raquo; Training Slide</a></li>
-                          
-                          <li><a href="<?php echo base_url('MobileSite/service') ?>">&raquo; Mobile Site</a></li>
-                          <li><a href="<?php echo base_url('MobileSite/slide') ?>">&raquo; Mobile Slider</a></li>
-                      </ul>
-                  </li>
+<!--                  <li class="dropdown">-->
+<!--                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-th"></i> Services <span class="caret"></span></a>-->
+<!--                      <ul class="dropdown-menu">-->
+<!--                          <li><a href="--><?php //echo base_url('ItSolution/getsolution'); ?><!--">&raquo; IT Solutions</a></li>-->
+<!--                          <li><a href="--><?php //echo base_url('ItSolution/getlicense'); ?><!--">&raquo; License</a></li>-->
+<!--                          <li><a href="--><?php //echo base_url('license'); ?><!--">&raquo; License Logo</a></li>-->
+<!--                          <li><a href="--><?php //echo base_url('software/listsoftware'); ?><!--">&raquo; Software Dev</a></li>-->
+<!--                          <li><a href="--><?php //echo base_url('training/trainingList'); ?><!--">&raquo; IT Training</a></li>-->
+<!--                          <li><a href="--><?php //echo base_url('training/centerlist'); ?><!--">&raquo; Test Center</a></li>-->
+<!--                          <li><a href="--><?php //echo base_url('training/slidelist'); ?><!--">&raquo; Training Slide</a></li>-->
+<!--                          -->
+<!--                          <li><a href="--><?php //echo base_url('MobileSite/service') ?><!--">&raquo; Mobile Site</a></li>-->
+<!--                          <li><a href="--><?php //echo base_url('MobileSite/slide') ?><!--">&raquo; Mobile Slider</a></li>-->
+<!--                      </ul>-->
+<!--                  </li>-->
                   <li><a href="<?php echo base_url('page'); ?>"><i class="glyphicon glyphicon-file"></i> Other Pages</a></li>
                   <li><a href="<?php echo base_url('user'); ?>"><i class="glyphicon glyphicon-user"></i> Users</a></li>
                   <li><a href="<?php echo base_url('media'); ?>"><i class="glyphicon glyphicon-file"></i> Media</a></li>
