@@ -49,10 +49,11 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-home"></i> Home<span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="<?php echo base_url("slideshow");?>">&raquo; Slideshow</a></li>
+                            <li><a href="<?php echo base_url("banner");?>">&raquo; Banner</a></li>
                             <li><a href="<?php echo base_url("service");?>">&raquo; Page Thumbnail</a></li>
                             <li><a href="<?php echo base_url("welcome");?>">&raquo; Welcome</a></li>
                             <li><a href="<?php echo base_url("news");?>">&raquo; News</a></li>
-                            <li><a href="#">&raquo; Socials</a></li>
+                            <li><a href="<?php echo base_url("social");?>">&raquo; Socials</a></li>
                         </ul>
                     </li>
                     <li><a href="<?php echo base_url('menu'); ?>"><i class="glyphicon glyphicon-list"></i> Menu</a></li>
