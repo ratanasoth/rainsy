@@ -1,0 +1,141 @@
+html,body{
+    margin: 0;
+    padding: 0;
+
+}
+.box-header {
+    margin: 0;
+    padding: 9px 45px;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    z-index: 999;
+    padding-top: 0;
+}
+.img-logo{
+    border-radius: 50%;
+}
+
+.text-white{
+    color: #FFF;
+}
+.text-header{
+    display: inline-block;
+    margin-left: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
+.menu-box{
+    padding-top: 18px;
+}
+.main-menu li a{
+    color: #d1e0e4;
+    font-family: 'Lucida Bright';
+    font-weight: bold;
+}
+.main-menu li a:hover
+{
+    background: rgba(90,90,90, 0.5) ;
+}
+.slider-box{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 640px;
+    background: url(../images/slider.jpg) no-repeat;
+    background-size: 100% auto;
+    position: relative;
+
+}
+.quote{
+    width: 800px;
+    padding: 12px 18px;
+    position: absolute;
+    right: 27px;
+    top: 130px;
+    color: #FFF;
+    font-family: 'Lucida Bright';
+    text-align: justify;
+}
+.content{
+    padding: 9px 45px;
+}
+.footer{
+    padding: 4px 0;
+}
+.footer-box{
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 54px 0;
+    background: #29323c;
+    height: 360px;
+    border-top: 22px solid #070809;
+}
+.cc .row{
+    margin-bottom: 9px;
+}
+.nav-link{
+    list-style: none;
+    padding: 5px;
+}
+.nav-link li{
+    margin-top: 4px;
+}
+.nav-link li a{
+    color: #ababab;
+}
+/* Floating social icon section */
+ul.floating-social
+{
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    left: 1px;
+    top: 150px;
+    list-style: none;
+    z-index: 99999;
+}
+ul.floating-social li a img{
+    width: 40px;
+    margin-bottom: 1px;
+}
+/* end floating social icon section */
+.txt-email{
+    padding: 4px 12px;
+}
+.mybtn
+{
+    width: 200px;
+}
+ul.social-icon{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ul.social-icon li{
+    display: inline;
+    margin: 0 7px;
+}
+ul.social-icon li a img{
+    width: 27px;
+
+}
+.w200{
+    width: 120px;
+    margin-bottom: 9px;
+}
+.btn-green{
+    background-color: green;
+    color: #FFF;
+}
+.txt-donate{
+    width: 255px;
+    padding: 6px 9px;
+}
+.btn-red{
+    background-color: red;
+    color: #FFF;
+}
