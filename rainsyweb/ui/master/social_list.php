@@ -21,7 +21,7 @@
                     <th>Name</th>
                     <th>Social URL</th>
                     <th>Icon</th>
-                    <th>sequence</th>
+                    <th>Order</th>
                     <th>Actions</th>
                 </tr>
             </thead>

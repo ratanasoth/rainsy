@@ -22,7 +22,7 @@ if($banner->num_rows()>0){
         <form class="form-horizontal" action="<?php echo base_url('banner/do_edit_banner/'.$id); ?>" method="post" enctype="multipart/form-data">
             <div class="form-group">
                 <label class="control-label col-sm-2" style="text-align: left">Description</label>
-                <div class="col-sm-4">
+                <div class="col-sm-10">
                     <textarea  
                         rows="4" 
                         cols="45" 
@@ -61,4 +61,17 @@ if($banner->num_rows()>0){
         output.width = 170;
         output.src = URL.createObjectURL(e.target.files[0]);
     }
+</script>
+<script src="<?php echo base_url('assets/ckeditor/ckeditor.js'); ?>"></script>
+<script>
+    window.onload=function()
+    {
+        CKEDITOR.replace('description');
+    }
+     var loadFile = function(event) {
+        var output = document.getElementById('partimg');
+        output.width = 200;
+        output.height = 200;
+        output.src = URL.createObjectURL(event.target.files[0]);
+  };
 </script>

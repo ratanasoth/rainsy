@@ -36,13 +36,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         -->
         <!-- End floating social icon section -->
         <!-- header-->
+        <?php $partimg ='assets/images/' ?>
         <div class="box-header">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-sm-4">
                         <div class="logo">
-                            <img src="<?php echo base_url('assets/images/logo1.png'); ?>" alt="Sam Rainsy" class="img-logo" width="60" />
-                            <h1 class="text-header text-white">SAM Rainsy</h1>
+                        <?php foreach ($logo as $l): ?>
+                            <img src="<?php echo base_url().$partimg.$l->image; ?>" alt="Sam Rainsy" class="img-logo" width="60" />
+                            <h1 class="text-header text-white"><?php echo $l->name; ?></h1>
+                        <?php endforeach ?>
                         </div>
                     </div>
                     <div class="col-sm-8">
@@ -57,8 +60,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <?php } else { ?>
                                         <!-- if the main menu has sub menu -->
                                         <li id="menu<?php echo $menu->id; ?>"><a href="<?php echo $menu->url; ?>"
-                                                                                 class="dropdown-toggle" data-toggle="dropdown"
-                                                                                 role="button" aria-haspopup="true" aria-expanded="false">
+                                        >
                                                 <?php echo $menu->name; ?> <span class="caret"></span></a>
                                             <ul class="dropdown-menu sub-menu">
                                                 <?php foreach($subs as $sub){ ?>
@@ -82,7 +84,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <!-- Slider-->
         <div class="slider-box">
             <h1 class="quote">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo egestas metus,
-                eu laoreet orci tempus at."
+
+               <?php foreach ($banner as $b): ?>
+                    <?php echo $b->description; ?>
+               <?php endforeach ?>
             </h1>
         </div>

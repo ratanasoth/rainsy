@@ -14,7 +14,10 @@
 class SocialModel extends CI_Model {
     //put your code here
     public function getSocial(){
-        return $this->db->get('social')->result();
+        
+        $this->db->order_by('seq','asc');
+         $query =  $this->db->get('social');
+         return $query->result();
     }
 
     private $social = "social";

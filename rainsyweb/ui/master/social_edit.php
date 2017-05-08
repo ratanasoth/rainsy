@@ -36,7 +36,7 @@ if($social->num_rows()>0){
                 </div>
             </div>           
             <div class="form-group">
-                <label for="url" class="control-label col-sm-2" style="text-align: left">Sequence</label>
+                <label for="url" class="control-label col-sm-2" style="text-align: left">Order</label>
                 <div class="col-sm-4">
                     <input type="number" class="form-control" id="sequence" value="<?php echo $sequence?>" name="sequence"/>
                 </div>

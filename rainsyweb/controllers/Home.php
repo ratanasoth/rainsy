@@ -8,6 +8,9 @@ class Home extends CI_Controller {
         $this->load->model('SlideshowModel');
         $this->load->model('ServiceModel');
         $this->load->model('NewsModel');
+        $this->load->model('BannerModel');
+        $this->load->model('SocialModel');
+        $this->load->model('LogoModel');
        
     }
 	/**
@@ -22,14 +25,17 @@ class Home extends CI_Controller {
             $data['partners'] = $this->PartnerModel->getPartners();
             $data['menus'] = $this->MenuModel->getMainMenu();
             $data['subs'] = $this->MenuModel->getSubMenu();
+            $data['logo'] = $this->LogoModel->getLogo();
             $data['MyClass'] =  $this;
             $data['slides'] = $this->SlideshowModel->getSlide();
             $data['welcome'] = $this->SlideshowModel->getWelcome();
             $data['services'] = $this->ServiceModel->getService();
             $data['news'] = $this->NewsModel->getNews();
+            $data['banner'] = $this->BannerModel->getBanner();
+            $data['social'] = $this->SocialModel->getSocial();
             $this->load->view("template/header",$data);
             $this->load->view("home/home",$data);
-            $this->load->view("template/footer");
+            $this->load->view("template/footer",$data);
 	}
         public function isContainSub($pid)
         {
