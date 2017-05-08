@@ -18,7 +18,10 @@ class Logo extends CI_Controller {
     }
 
     public function index(){
-     
+        if($this->session->userid==false)
+        {
+            redirect('admin/login');
+        }
         $data['title'] = "Logo List";
         $data['logo'] = $this->LogoModel->getLogo();
         $this->load->view('master/header',$data);
@@ -27,7 +30,10 @@ class Logo extends CI_Controller {
     }
 
     public function add(){
-       
+        if($this->session->userid==false)
+        {
+            redirect('admin/login');
+        }
         $data['sms'] ="";
         $data['title'] = "Add Logo";
         $this->load->view('master/header',$data);
@@ -36,7 +42,10 @@ class Logo extends CI_Controller {
     }
 
     public function doUpload(){
-        
+        if($this->session->userid==false)
+        {
+            redirect('admin/login');
+        }
         $config['upload_path']          = './assets/images/';
         $config['allowed_types']        = 'gif|jpg|png';
         $config['max_size']             = 9000000;
@@ -66,6 +75,10 @@ class Logo extends CI_Controller {
     }
 
     public function delete(){
+        if($this->session->userid==false)
+        {
+            redirect('admin/login');
+        }
         $id = $this->uri->segment(3);
         $name = $this->uri->segment(4);
         $path = "assets/images/".$name;
