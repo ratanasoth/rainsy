@@ -13,6 +13,8 @@ class Page extends CI_Controller{
         parent::__construct();
         $this->load->model('PageModel');
         $this->load->model('MenuModel');
+        $this->load->model('LogoModel');
+        $this->load->model('SocialModel');
     }
     /**
      * Default action will list all created pages.
@@ -77,6 +79,8 @@ class Page extends CI_Controller{
         $data['menus'] = $this->MenuModel->getMainMenu();
         $data['page'] = $this->PageModel->getPageById($id);
         $data['subs'] = $this->MenuModel->getSubMenu();
+        $data['logo'] = $this->LogoModel->getLogo();
+        $data['social'] = $this->SocialModel->getSocial();
         $data['MyClass'] =  $this;
         $this->load->view('template/header', $data);
         $this->load->view('template/page-view');
