@@ -6,7 +6,6 @@
     </div>
     <div class="col-sm-6" style="text-align: right">
         <input type="button" value="Save" class="btn btn-primary btn-sm" onclick="sumitForm()" />
-        <input type="button" id="btnReset" value="Cancel" class="btn btn-danger btn-sm" />
         <a href="<?php echo base_url('page'); ?>" class="btn btn-info btn-sm">Back</a>
     </div>
 </div>

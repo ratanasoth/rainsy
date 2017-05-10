@@ -1,7 +1,7 @@
 <div class='row'>
     <div class="col-sm-6">
         <div class="table-caption">
-            Service List
+            Page Thumbnail List
         </div>
         
     </div>
@@ -17,7 +17,7 @@
             <thead>
                 <tr>
                     <th>Id</th>
-                    <th>Name</th>
+                    <th>Title</th>
                     <th>Image</th>
                     <th>OrderN<sup>0</sup></th>
                     <th>Description</th>

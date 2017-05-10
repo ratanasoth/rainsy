@@ -39,14 +39,8 @@
                 <hr />
                 <ul class='social-icon'>
                 <?php foreach ($social as $s): ?>
-                     <li><a href="<?php echo $s->url ?>" target="_blank"><img src="<?php echo base_url().$partimg.$s->photo; ?>" alt="Facebook" title="Facebook"/></a></li>
+                     <li><a href="<?php echo $s->url ?>" target="_blank"><img src="<?php echo base_url().$partimg.$s->photo; ?>" title="<?php echo $s->name ?>"/></a></li>
                 <?php endforeach ?>
-                   
-                   <!--  <li><a href="#"><img src="assets/images/tweeter.png" alt="" title="Tweeter"/></a></li>
-                    <li><a href="#"><img src="assets/images/instagram.png" alt="" title="Instagram"/></a></li>
-                    <li><a href="#"><img src="assets/images/linkedin.png" alt="" title="LinkedIn"/></a></li>
-                    <li><a href="#"><img src="assets/images/gplus.png" alt="" title="Google Plus"/></a></li>
-                    <li><a href="#"><img src="assets/images/youtube.png" alt="" title="Youtube"/></a></li> -->
                 </ul>
             </div>
         </div>
